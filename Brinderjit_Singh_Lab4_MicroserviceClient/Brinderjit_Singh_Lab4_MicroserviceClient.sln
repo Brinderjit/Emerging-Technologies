@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Brinderjit_Singh_Lab4_MicroserviceClient", "Brinderjit_Singh_Lab4_MicroserviceClient\Brinderjit_Singh_Lab4_MicroserviceClient.njsproj", "{F4FAE872-64BD-47E1-AF8E-E8C833114283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4FAE872-64BD-47E1-AF8E-E8C833114283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FAE872-64BD-47E1-AF8E-E8C833114283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FAE872-64BD-47E1-AF8E-E8C833114283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FAE872-64BD-47E1-AF8E-E8C833114283}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8E2C81D-442E-4834-8B23-47625E284B2B}
+	EndGlobalSection
+EndGlobal
