@@ -1,0 +1,45 @@
+<h1>Student List</h1>
+<div *ngIf="students">
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Student Number</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Address</th>
+    <th>City</th> 
+    <th>Phone Number</th>  
+    <th>Email</th>  
+    <th>Program</th>   
+  </tr>
+<tr *ngFor="let student of students">
+  <td>
+    <a [routerLink]="['/admin',student.studentnumber,'courses']">{{student.studentnumber}}</a>
+  </td>
+  <td>
+    {{student.firstname}}
+  </td>
+  <td>
+    {{student.lastname}}
+  </td>
+  <td>
+    {{student.address}}
+  </td>
+   <td>
+    {{student.city}}
+  </td>
+  <td>
+    {{student.phonenumber}}
+  </td>
+   <td>
+    {{student.email}}
+  </td>
+   <td>
+    {{student.program}}
+  </td>
+</tr>
+    
+</table>
+</div>
+<div *ngIf="!students || students.length === 0">
+    No students yet!!
+</div>

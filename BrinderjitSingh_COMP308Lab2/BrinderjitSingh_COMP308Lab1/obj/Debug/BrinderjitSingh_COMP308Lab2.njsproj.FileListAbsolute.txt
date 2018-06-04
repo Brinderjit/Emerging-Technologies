@@ -1,0 +1,3 @@
+D:\Semester 4\Emerging technologies\Assignments\BrinderjitSingh_COMP308Lab2\BrinderjitSingh_COMP308Lab1\obj\Debug\BrinderjitSingh_COMP308Lab2.njsprojResolveAssemblyReference.cache
+D:\Semester 4\Emerging technologies\Assignments\BrinderjitSingh_COMP308Lab2\BrinderjitSingh_COMP308Lab1\obj\Debug\BrinderjitSingh_COMP308Lab2.njsproj.CoreCompileInputs.cache
+D:\Semester 4\Emerging technologies\Assignments\BrinderjitSingh_COMP308Lab2\BrinderjitSingh_COMP308Lab1\bin\Microsoft.NodejsTools.WebRole.dll

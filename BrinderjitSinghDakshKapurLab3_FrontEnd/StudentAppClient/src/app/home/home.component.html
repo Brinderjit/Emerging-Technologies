@@ -1,0 +1,39 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Student Information Manegement</a>
+        </div>
+        <ul class="nav navbar-nav" *ngIf="!isLoggedIn$">
+            <li class="active"><a [routerLink]="['/']">Home</a></li>
+            
+            <li *ngIf="!isLoggedIn$">
+                <a [routerLink]="['/authentication/signup']">Signup</a>
+            </li>
+            <li *ngIf="!isLoggedIn$">
+                <a [routerLink]="['/authentication/signin']">Signin</a>
+            </li>
+
+        </ul>
+        <ul class="nav navbar-nav" *ngIf="isLoggedIn$">
+            <li class="active"><a [routerLink]="['/']">Home</a></li>
+            
+            <li *ngIf="!isLoggedIn$">
+                <a [routerLink]="['/authentication/signup']">Signup</a>
+            </li>
+            <li *ngIf="!isLoggedIn$">
+                <a [routerLink]="['/authentication/signin']">Signin</a>
+            </li>
+            <li *ngIf="user.role=='admin'"><a [routerLink]="['/admin']">List Students</a></li>
+            <li *ngIf="user.role=='user'"><a [routerLink]="['/courses']">List Courses</a></li>
+            <li ><a [routerLink]="['/courses/create']">Create Course</a></li>
+            <li><a  [routerLink]="" (click)="signout()">Signout</a></li>
+            
+
+
+
+        </ul>
+        <div *ngIf="isLoggedIn$" style="float:right"> <h3 style="color: white">Hello {{user.firstname}}</h3></div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

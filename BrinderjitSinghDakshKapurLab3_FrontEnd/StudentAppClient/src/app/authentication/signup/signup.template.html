@@ -1,0 +1,71 @@
+<h2 class="col-sm-offset-4" style="margin-bottom:30px">Sign Up</h2>
+<form  class="form-horizontal" (ngSubmit)="signup()">
+   
+<div class="form-group">
+      <label class="control-label col-sm-3" for="firstname">First Name:</label>
+      <div class="col-sm-9">
+        <input type="text" [(ngModel)]="user.firstname" class="form-control" id="firstname" placeholder="Enter first name" name="firstName">
+      </div>
+</div>
+     <div class="form-group">
+      <label class="control-label col-sm-3" for="lastname">Last Name:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="lastname" [(ngModel)]="user.lastname" placeholder="Enter last name" name="lastName">
+      </div>
+    </div>
+
+   <div class="form-group">
+      <label class="control-label col-sm-3"  for="email">Email:</label>
+      <div class="col-sm-9">          
+        <input type="email" class="form-control" [(ngModel)]="user.email" id="email" placeholder="Enter email" name="email" value="">
+      </div>
+    </div>
+
+ <div class="form-group">
+      <label class="control-label col-sm-3" for="studentnumber">Student Number :</label>
+      <div class="col-sm-9">          
+        <input type="studentnumber" class="form-control" [(ngModel)]="user.studentnumber" id="studentnumber" placeholder="Enter Student Number" name="studentnumber" value="">
+      </div>
+      </div>
+
+   <div class="form-group">
+      <label class="control-label col-sm-3" for="password">Password :</label>
+      <div class="col-sm-9">          
+        <input type="password" class="form-control" [(ngModel)]="user.password" id="password" placeholder="Enter password" name="password">
+      </div>
+    </div>
+ <div class="form-group">
+      <label class="control-label col-sm-3" for="address">Address :</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" [(ngModel)]="user.address" id="address" placeholder="Enter address" name="address">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="city">City :</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" [(ngModel)]="user.city" id="city" placeholder="Enter city" name="city">
+      </div>
+    </div>
+      <div class="form-group">
+      <label class="control-label col-sm-3" for="phonenumber">Phone number :</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" [(ngModel)]="user.phonenumber" id="phonenumber" placeholder="Enter phone number" name="phonenumber">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-3" for="program">Program :</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" [(ngModel)]="user.program" id="program" placeholder="Enter program" name="program">
+      </div>
+    </div>
+     <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class=" btn btn-primary" style="width:100%!important">Submit</button>
+   </div></div>
+   
+    <span>{{errorMessage}}</span>
+</form>
+
+  
+	
+  

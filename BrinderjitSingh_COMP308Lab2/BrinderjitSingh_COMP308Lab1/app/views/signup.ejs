@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <% include ../views/partial_head %>
+</head>
+<body>
+<% include ../views/partial_header %>
+<div style="height:40px"></div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+
+
+<div class="well">
+<h2 class="col-sm-offset-4" style="margin-bottom:30px">Registration form</h2>
+  <form class="form-horizontal" method="post" action="/signup">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="firstname">First Name:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="firstName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="lastname">Last Name:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="lastname" placeholder="Enter last name" name="lastName">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="email">Username:</label>
+      <div class="col-sm-9">          
+        <input type="email" class="form-control" id="userName" placeholder="Enter Username" name="userName" value="">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="password">Password:</label>
+      <div class="col-sm-9">          
+        <input type="password" class="form-control" id=password" placeholder="Enter password" name="password">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="confirmPassword">Confirm Password:</label>
+      <div class="col-sm-9">          
+        <input type="password" class="form-control" id="comments" placeholder="Confirm Password" name="confirmPassword"/>
+      </div>
+</div>
+
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="sports">Favourite Sports:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="sports" placeholder="Enter favourite sports" name="sports">
+      </div>
+    </div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="food">Favourite Food:</label>
+      <div class="col-sm-9">          
+       <input type="text" class="form-control" id="food" placeholder="Enter favourite food" name="food"/>
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-success" style="width:100%!important">Submit</button>
+   </div></div>
+    <%if (typeof msg !== 'undefined') { %>
+	<div class="alert alert-success alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> <%=msg%>
+  </div>
+  <% } %>
+    </div>
+  </form>
+</div>
+<div class="col-sm-3"></div>
+</body>
+</html>

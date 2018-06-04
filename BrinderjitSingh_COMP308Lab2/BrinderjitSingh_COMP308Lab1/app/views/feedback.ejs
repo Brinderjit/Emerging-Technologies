@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <% include ../views/partial_head %>
+</head>
+<body>
+<% include ../views/partial_header %>
+<div style="height:40px"></div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+
+
+<div class="well">
+<h2 class="col-sm-offset-4" style="margin-bottom:30px">Feedback form</h2>
+  <form class="form-horizontal" method="post" action="/feedback">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="firstname">First Name:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="firstName" value="<%=firstname%>">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="lastname">Last Name:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="lastname" placeholder="Enter last name" name="lastName" value="<%=lastname%>">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="email">Email:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" value="<%=emailvalue%>">
+      </div>
+    </div>
+	 <div class="form-group">
+      <label class="control-label col-sm-3" for="food">Favourite Food:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="food" placeholder="Enter favourite food" name="food" value="<%=food%>">
+      </div>
+    </div>
+	 <div class="form-group">
+      <label class="control-label col-sm-3" for="sports">favourite sports:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="sports" placeholder="Enter favourite sports" name="sports" value="<%=sport%>">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="comments">Comments:</label>
+      <div class="col-sm-9">          
+        <textarea rows="4" class="form-control" id="comments" placeholder="Enter comments" name="comments"></textarea>
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-success" style="width:100%!important">Submit</button>
+   </div></div>
+    </div>
+  </form>
+</div>
+<div class="col-sm-3"></div>
+</body>
+</html>

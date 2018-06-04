@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+<div style="height:40px"></div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+
+
+<div class="well">
+<h2 class="col-sm-offset-4" style="margin-bottom:30px">Feedback form</h2>
+  <form class="form-horizontal" method="post" action="/feedback">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="firstname">First Name:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="firstname">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="lastname">Last Name:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="lastname" placeholder="Enter last name" name="lastname">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="email">Email:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" value="<%=emailvalue%>">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="studentid">Student Id:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="studentid" placeholder="Enter student id" name="studentid">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="sports">Favourite Sports:</label>
+      <div class="col-sm-9">          
+        <input type="text" class="form-control" id="sports" placeholder="Enter favourite sports" name="sports">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="comments">Comments:</label>
+      <div class="col-sm-9">          
+        <textarea rows="4" class="form-control" id="comments" placeholder="Enter comments" name="comments"></textarea>
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-success" style="width:100%!important">Submit</button>
+   </div></div>
+    </div>
+  </form>
+</div>
+<div class="col-sm-3"></div>
+</body>
+</html>

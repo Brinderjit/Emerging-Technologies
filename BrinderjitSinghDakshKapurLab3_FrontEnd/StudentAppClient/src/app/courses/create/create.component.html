@@ -1,0 +1,38 @@
+<h1>New Course</h1>
+<form class ="form-horizontal" (ngSubmit)="create()" novalidate>
+
+
+    <div class="form-group">
+        <label  class="control-label col-sm-3" for="coursecode">course code:</label>
+        <div  class="col-sm-9">
+            <input type="text" class="form-control" required [(ngModel)]="course.coursecode"
+                   name="coursecode" placeholder="course code">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="coursename">course name:</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" required [(ngModel)]="course.coursename"
+                   name="coursename" placeholder="course name">
+        </div>
+        </div>
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="section">Section:</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" required [(ngModel)]="course.section"
+                   name="section" placeholder="section">
+        </div>
+        </div>
+     <div class="form-group">
+        <label class="control-label col-sm-3" for="semester">Semester:</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" required [(ngModel)]="course.semester"
+                   name="semester" placeholder="semester">
+        </div>
+        </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-success" style="width:100%!important">Submit</button>
+   </div></div>
+    <strong id="error">{{errorMessage}}</strong>
+</form>

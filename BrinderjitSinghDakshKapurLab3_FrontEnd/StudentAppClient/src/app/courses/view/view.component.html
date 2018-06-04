@@ -1,0 +1,41 @@
+<form class ="form-horizontal" (ngSubmit)="delete()" novalidate>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#Summery" class="text-success"><i class="fa fa-indent"></i> Summery</a></li>
+                                       
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div id="Summery" class="tab-pane fade in active">
+
+                                            <div class="table-responsive panel">
+                                                <table class="table">
+                                                    <tbody>
+    
+                                                            <tr>
+                                                                <td class="text-success"><i class="fa fa-user"></i> Course Code</td>
+                                                                <td>{{course.coursecode}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-success"><i class="fa fa-list-ol"></i> Course name</td>
+                                                                <td>{{course.coursename}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-success"><i class="fa fa-book"></i> Section</td>
+                                                                <td>{{course.section}}</td>
+                                                            </tr>
+                                                           
+                                                            <tr>
+                                                                <td class="text-success"><i class="fa fa-calendar"></i> Semester</td>
+                                                                <td>{{course.semester}}</td>
+                                                         
+
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning">Drop Course</button>
+
+
+</form>
